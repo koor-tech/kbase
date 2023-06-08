@@ -8,9 +8,9 @@ hero:
   tagline: Getting the most out of Rook and Ceph
   actions:
     - theme: brand
+      text: Help Desk
+      link: /help-desk
+    - theme: brand
       text: Office Hours
-      link: /office-hours
-    - theme: alt
-      text: Logo Test
-      link: /logo-test
+      link: /support/office-hours
 ---
