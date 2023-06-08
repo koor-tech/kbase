@@ -6,6 +6,12 @@ export default defineConfig({
   titleTemplate: ':title | Koor Technologies, Inc.',
   description: "For help with KSD, Rook, and Ceph",
   lang: 'en-US',
+  head: [
+    [
+      'link',
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+    ]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/koor-logo.png',
