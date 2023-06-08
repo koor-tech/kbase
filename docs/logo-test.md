@@ -1,0 +1,1 @@
+![Koor logo](./koor-logo.png)

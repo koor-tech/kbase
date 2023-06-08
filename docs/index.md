@@ -10,4 +10,7 @@ hero:
     - theme: brand
       text: Office Hours
       link: /office-hours
+    - theme: alt
+      text: Logo Test
+      link: /logo-test
 ---
