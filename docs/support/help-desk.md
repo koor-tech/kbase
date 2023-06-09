@@ -1,3 +1,4 @@
+
 # Help Desk
 
 ## Open to any question about data storage
@@ -14,9 +15,30 @@ The Help Desk is for anyone who needs help, especially if you are using the KSD 
 
 We prioritize questions from those who purchased KSD Pro. KSD Pro includes a system assessment, so we can take a closer look and get more specific about solutions to whatever trouble you are having.
 
-## Feedback is welcome
+### Feedback is welcome, too
 
 The Koor Help Desk is a great way to give us feedback, too. Use the same form to send us your ideas. We collect your email address in case we want to ask clarifying questions to make sure we understand your points.
+
+## Help Desk form
+
+<form name="Contact Us" class="koor-form" action="https://koor.tech/contact" method="POST">
+    <div class="koor-field">
+        <label for="name">Name:</label>
+        <input type="text" name="name" class="form-control" placeholder="Your name"> 
+    </div>
+    <div class="koor-field">
+        <label for="email">Email:</label>
+        <input type="email" name="email" class="form-control" placeholder="Your email address">
+    </div>
+    <div class="koor-field">
+        <label for="message">Message:</label>
+        <textarea name="message" class="form-control" rows="4" placeholder="Your question or feedback"></textarea>
+    </div>
+    <div class="koor-field">
+<label />
+    <button type="submit">Submit to Koor Help Desk</button>
+    </div>
+</form>
 
 ## Alternative ways to get help
 
