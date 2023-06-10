@@ -17,20 +17,29 @@ export default defineConfig({
     logo: '/koor-logo.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Office Hours', link: '/office-hours' },
+      { text: 'KSD', link: '/trial/' },
+      { text: 'Support', link: '/support/' },
     ],
 
     sidebar: [
       {
+        text: 'KSD Trial',
+        items: [
+          { text: 'Your Free Trial', link: '/trial/' },
+          { text: 'Getting Started', link: '/trial/getting-started' },
+        ]
+      },
+      {
         text: 'Support',
         items: [
-          { text: 'Office Hours', link: '/office-hours' },
+          { text: 'Help Desk', link: '/support/help-desk' },
+          { text: 'Office Hours', link: '/support/office-hours' },
         ]
-      }
+      },
     ],
 
     footer: {
-      message: 'Data storage is easy. It\'s the details that are hard.',
+      message: "Data storage is easy. It's the details that are hard. That's why there's Koor.",
       copyright: 'Copyright © 2023 Koor Technologies, Inc.'
     },
 
