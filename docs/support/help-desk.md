@@ -1,25 +1,7 @@
 
 # Help Desk
 
-## Open to any question about data storage
-
-Koor offers an asynchronous help desk to help you with your questions about data storage. While Koor specializes in Rook and Ceph storage, we have a range and depth of skills that cover a large set of related topics.
-
-Post your questions, and give us a try. We will do our best to answer. We are also willing to admit when we do not know the answer.
-
-Koor is a remote company; we have people in many time zones around the world. And you are wherever you are. Given the situation, we try to respond to help desk questions within one business day, although it may take two or three, depending on various national holidays of the various nations we reside in.
-
-### For free trial users as well as paying customers
-
-The Help Desk is for anyone who needs help, especially if you are using the KSD free trial or Pro subscription. 
-
-We prioritize questions from those who purchased KSD Pro. KSD Pro includes a system assessment, so we can take a closer look and get more specific about solutions to whatever trouble you are having.
-
-### Feedback is welcome, too
-
-The Koor Help Desk is a great way to give us feedback, too. Use the same form to send us your ideas. We collect your email address in case we want to ask clarifying questions to make sure we understand your points.
-
-## Help Desk form
+## Send us your questions and feedback
 
 <form name="Contact Us" class="koor-form" action="https://koor.tech/contact" method="POST">
     <div class="koor-field">
@@ -39,6 +21,24 @@ The Koor Help Desk is a great way to give us feedback, too. Use the same form to
     <button type="submit">Submit to Koor Help Desk</button>
     </div>
 </form>
+
+## Open to any question about data storage
+
+Koor offers an asynchronous help desk to help you with your questions about data storage. While Koor specializes in Rook and Ceph storage, we have a range and depth of skills that cover a large set of related topics.
+
+Post your questions, and give us a try. We will do our best to answer. We are also willing to admit when we do not know the answer.
+
+Koor is a remote company; we have people in many time zones around the world. And you are wherever you are. Given the situation, we try to respond to help desk questions within one business day, although it may take two or three, depending on various national holidays of the various nations we reside in.
+
+### For free trial users as well as paying customers
+
+The Help Desk is for anyone who needs help, especially if you are using the KSD free trial or Pro subscription. 
+
+We prioritize questions from those who purchased KSD Pro. KSD Pro includes a system assessment, so we can take a closer look and get more specific about solutions to whatever trouble you are having.
+
+### Feedback is welcome, too
+
+The Koor Help Desk is a great way to give us feedback, too. Use the same form to send us your ideas. We collect your email address in case we want to ask clarifying questions to make sure we understand your points.
 
 ## Alternative ways to get help
 

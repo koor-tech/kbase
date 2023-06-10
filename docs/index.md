@@ -9,7 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Help Desk
-      link: /help-desk
+      link: /support/help-desk
+    - theme: brand
+      text: KSD Free Trial
+      link: /trial/
     - theme: brand
       text: Office Hours
       link: /support/office-hours

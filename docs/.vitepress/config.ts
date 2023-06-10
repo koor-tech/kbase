@@ -17,17 +17,25 @@ export default defineConfig({
     logo: '/koor-logo.png',
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'KSD', link: '/trial/' },
       { text: 'Support', link: '/support/' },
     ],
 
     sidebar: [
+      {
+        text: 'KSD Trial',
+        items: [
+          { text: 'Your Free Trial', link: '/trial/' },
+          { text: 'Getting Started', link: '/trial/getting-started' },
+        ]
+      },
       {
         text: 'Support',
         items: [
           { text: 'Help Desk', link: '/support/help-desk' },
           { text: 'Office Hours', link: '/support/office-hours' },
         ]
-      }
+      },
     ],
 
     footer: {
