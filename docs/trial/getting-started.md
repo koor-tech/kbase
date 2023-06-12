@@ -1,5 +1,5 @@
 ---
-KSD Trial - Getting Started
+title: KSD Trial - Getting Started
 ---
 
 # KSD Trial - Getting Started

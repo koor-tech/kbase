@@ -1,5 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
+title: 'Koor Knowledge Center'
 layout: home
 
 hero:

@@ -1,5 +1,5 @@
 ---
-KSD Trial Subscription
+title: KSD Trial Subscription
 ---
 
 # KSD Trial Subscription

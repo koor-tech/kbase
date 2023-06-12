@@ -1,3 +1,7 @@
+---
+title: Office Hours
+---
+
 # Koor Office Hours
 
 ## Join Us
