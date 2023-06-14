@@ -21,6 +21,10 @@ export default defineConfig({
       { text: 'Support', link: '/support/' },
     ],
 
+    search: {
+      provider: 'local'
+    },
+
     sidebar: [
       {
         text: 'KSD Trial',
