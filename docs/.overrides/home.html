@@ -1,0 +1,61 @@
+{#- This file was automatically generated - do not edit -#} {% extends
+"main.html" %} {% block tabs %} {{ super() }}
+<style>
+  .md-header {
+    position: initial;
+  }
+  .md-main__inner {
+    margin: 0;
+  }
+  .md-content {
+    display: none;
+  }
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+</style>
+<section class="mdx-container">
+  <div class="md-grid md-typeset">
+    <div class="mdx-hero">
+      <div class="mdx-hero__image">
+        <!--<img
+          src="assets/images/illustration.png"
+          alt=""
+          width="1659"
+          height="1200"
+          draggable="false"
+        />-->
+      </div>
+      <div class="mdx-hero__content">
+        <h1>Koor Knowledge Center</h1>
+        <h2>What you need to know about KSD, Rook, and Ceph</h2>
+        <p>Getting the most out of Rook and Ceph</p>
+        <a
+          href="{{ 'support/help-desk' | url }}"
+          title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary"
+        >
+          Help Desk
+        </a>
+        <a href="{{ 'trial/' | url }}" title="KSD Free Trial" class="md-button">
+          KSD Free Trial
+        </a>
+        <a
+          href="{{ '/support/office-hours' | url }}"
+          title="KSD Free Trial"
+          class="md-button"
+        >
+          Office Hours
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %} {% block content %}{% endblock %}

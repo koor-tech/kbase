@@ -17,8 +17,8 @@
         <textarea name="message" class="form-control" rows="4" placeholder="Your question or feedback"></textarea>
     </div>
     <div class="koor-field">
-<label />
-    <button type="submit">Submit to Koor Help Desk</button>
+        <label for="submit"></label>
+        <button type="submit" name="submit">Submit to Koor Help Desk</button>
     </div>
 </form>
 

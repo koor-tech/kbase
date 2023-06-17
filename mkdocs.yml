@@ -1,0 +1,116 @@
+site_name: "Koor Knowledge Center"
+docs_dir: docs/
+site_url: 'https://kb.koor.tech'
+repo_url: https://github.com/koor-tech/kbase
+edit_uri: edit/master/Documentation/
+site_author: "Koor Technologies, Inc."
+site_description: "Koor Knowledge Base"
+use_directory_urls: true
+copyright: |
+  <a class="logo" href="/">
+    <img src="/images/logo.png" alt="Koor Technologies, Inc. logo" style="max-width: 100px" />
+  </a>
+  <p>
+    &#169; 2023 Koor Technologies, Inc. All Rights Reserved.
+  </p>
+  <p>
+    Ceph is a trademark or registered trademark of Red Hat, Inc. or its subsidiaries in the United States and other countries.
+  </p>
+  <p>
+    All trademarks are property of their respective owners in the US and other countries.
+  </p>
+theme:
+  name: material
+  custom_dir: docs/.overrides/
+  font: false
+  favicon: /images/favicon.png
+  logo: /images/logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: 'default'
+      primary: 'koor'
+      accent: 'deep orange'
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: "slate"
+      primary: "koor"
+      accent: "deep orange"
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.tabs.link
+    - instant
+    - navigation.expand
+    - navigation.indexes 
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - tabs
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search
+  - exclude:
+      glob:
+        - README.md
+        - "*.gotmpl"
+        - "*.gotmpl.md"
+  - awesome-pages
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
+      #js_files: []
+  - redirects:
+      redirect_maps:
+        README.md: Getting-Started/intro.md
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/koor-tech
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/koor-technologies-inc/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/koor_tech
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@koor-tech
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/koorinc
+    - icon: fontawesome/brands/medium
+      link: https://koor.tech/blog/

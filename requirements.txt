@@ -1,0 +1,9 @@
+mkdocs
+mkdocs-awesome-pages-plugin
+mkdocs-exclude
+mkdocs-macros-plugin
+mkdocs-material==9.*
+mkdocs-material-extensions
+mkdocs-minify-plugin
+mkdocs-redirects
+pygit2
