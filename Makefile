@@ -1,10 +1,8 @@
-IMAGE ?= squidfunk/mkdocs-material
-
 serve:
-	docker run --net=host --volume "$$(pwd)":"$$(pwd)" --workdir "$$(pwd)" -it $(IMAGE)
+	mkdocs serve
 
 build:
-	docker run --net=host --volume "$$(pwd)":"$$(pwd)" --workdir "$$(pwd)" -it $(IMAGE) build --clean
+	mkdocs build --clean
 
 prepare:
 	pip3 install -r requirements.txt
