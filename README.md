@@ -1,6 +1,6 @@
 # kbase
 
-Knowledge base
+Koor Knowledge base
 
 ## Contributing
 
