@@ -1,5 +1,5 @@
 ---
-KSD Trial Subscription
+title: "KSD Trial Subscription"
 ---
 
 # Thank you for trying KSD
