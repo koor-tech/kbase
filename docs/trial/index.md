@@ -1,10 +1,8 @@
 ---
-KSD Trial Subscription
+title: "KSD Trial Subscription"
 ---
 
-# KSD Trial Subscription
-
-## Thank you for trying KSD
+# Thank you for trying KSD
 
 <img src="/images/free-trial.png" class="float-left" style="margin-right: 2em;" width="25%" />
 
@@ -14,7 +12,11 @@ If this is your first time using KSD, you are probably wondering what to do next
 
 <div class="clear-float"></div>
 
-## How to get help
+# Need to register?
+
+You can [register your KSD free trial](https://koor.tech/register/) at any time. Do it early so that we can give you full support during your trial.
+
+# How to get help
 
 We are here to help make your experience positive. If you get stuck, feel free to use our Help Desk to send us a question. Please include your email address (on the form) so that we can reply.
 
