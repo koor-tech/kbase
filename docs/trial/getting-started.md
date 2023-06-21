@@ -128,4 +128,4 @@ vdb
 That's it! :party_popper:, now you are using Koor Storage Distribution Operator.
 
 Do you have issues running Koor Operator?, take a look [Koor Operator Troubleshooting](https://kb.koor.tech/knowledge/rook/issues/) 
-or [Contact us](https://koor.tech/contact/).
+or [Contact us](https://kb.koor.tech/support/help-desk/).
