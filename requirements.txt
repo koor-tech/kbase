@@ -7,3 +7,4 @@ mkdocs-material-extensions
 mkdocs-minify-plugin
 mkdocs-redirects
 pygit2
+mkdocs-video
