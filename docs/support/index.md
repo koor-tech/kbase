@@ -6,3 +6,5 @@ We are here to help. If you cannot find what you are looking for in the Koor Kno
 
 - [Help Desk](help-desk)
 - [Office Hours](office-hours)
+- [Getting Started with KSD](ksd-getting-started)
+- [KSD Free Trial](free-trial)

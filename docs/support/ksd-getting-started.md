@@ -1,5 +1,5 @@
 ---
-title: "KSD Trial - Getting Started"
+title: "Getting Started with KSD"
 ---
 
 Thank you for trying Koor Storage Distribution.
