@@ -3,7 +3,7 @@
 
 ## Send us your questions and feedback
 
-<form name="Contact Us" class="koor-form" action="https://koor.tech/contact" method="POST">
+<form name="Contact Us" class="koor-form" action="https://about.koor.tech/contact/" method="POST">
     <div class="koor-field">
         <label for="name">Name:</label>
         <input type="text" name="name" class="form-control" placeholder="Your name"> 
@@ -50,4 +50,4 @@ If you would like to talk to us live, you can attend one of our [office hours](o
 
 Some issues require extensive help to resolve beyond what we can resolving over the Help Desk. For help with significant issues, Koor offers Consulting Hours, which are reserved in 10-hour blocks. Before the consultation, we ask that you subscribe to a KSD Pro license so that we have the best, time-saving diagnostic tools.
 
-See our [pricing page](https://koor.tech/pricing/) if you would like consulting help with your Rook Ceph storage issues.
+See our [pricing page](https://about.koor.tech/pricing/) if you would like consulting help with your Rook Ceph storage issues.
