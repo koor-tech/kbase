@@ -20,4 +20,4 @@ We are here to help make your experience positive. If you get stuck, use our Hel
 
 # Need to register?
 
-You can [register your KSD free trial](https://koor.tech/register/) at any time. Do it early so that we can give you full support during your trial.
+You can [register your KSD free trial](https://about.koor.tech/pricing/freetrial/) at any time. Do it early so that we can give you full support during your trial.

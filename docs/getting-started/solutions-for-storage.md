@@ -31,7 +31,7 @@ Let's talk about each one
     
     GlusterFS can be used as a Persistent Volume Claim (PVC) in Kubernetes.
 
-  - **[Koor](https://koor.tech/)**:
+  - **[Koor](https://about.koor.tech/)**:
     [KSD Koor Storage Distribution](ksd-koor-storage-distribution.md),
     based on [Rook](https://rook.io/), our own distribution, contains our expert team’s knowledge and experience
     from having worked years on many different storage systems and clusters.
@@ -47,7 +47,7 @@ Let's talk about each one
         - Future enhancements
         - Monthly releases
 
-      - [Rook Ceph Experts](https://koor.tech/register/) 
+      - [Rook Ceph Experts](https://about.koor.tech/product/) 
         - System check-up & assessment
         - Performance tuning
         - Troubleshooting issues

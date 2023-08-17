@@ -7,7 +7,7 @@ site_author: "Koor Technologies, Inc."
 site_description: "Koor Knowledge Base"
 use_directory_urls: true
 copyright: |
-  <a class="logo" href="https://koor.tech/">
+  <a class="logo" href="https://about.koor.tech/">
     <img src="/images/logo.png" alt="Koor Technologies, Inc. logo" style="max-width: 100px" />
   </a>
   <p>
@@ -115,4 +115,4 @@ extra:
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/koorinc
     - icon: fontawesome/brands/medium
-      link: https://koor.tech/blog/
+      link: https://about.koor.tech/blog/
