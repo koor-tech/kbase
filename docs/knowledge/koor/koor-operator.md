@@ -59,7 +59,7 @@ The Koor Operator uses sane defaults that help you bootstrap your KSD cluster qu
 | `koorCluster.spec.ksdReleaseName` | The name to use for KSD helm release. | `"ksd"` |
 | `koorCluster.spec.monitoringEnabled` | If monitoring should be enabled, requires the prometheus-operator to be pre-installed. | `true` |
 | `koorCluster.spec.toolboxEnabled` | If the Ceph toolbox, should be deployed as well. | `true` |
-| `koorCluster.spec.upgradeOptions.endpoint` | The api endpoint used to find the ceph latest version | `"versions.koor.tech"` |
+| `koorCluster.spec.upgradeOptions.endpoint` | The api endpoint used to find the ceph latest version | `"https://"versions.koor.tech"` |
 | `koorCluster.spec.upgradeOptions.mode` | Upgrade mode. Options: disabled, notify, upgrade. | `"notify"` |
 | `koorCluster.spec.upgradeOptions.schedule` | The schedule to check for new versions. Uses CRON format as specified by https://github.com/robfig/cron/tree/v3. Defaults to everyday at midnight in the local timezone. To change the timezone, prefix the schedule with CRON_TZ=<Timezone>. For example: "CRON_TZ=UTC 0 0 * * *" is midnight UTC. | `"0 0 * * *"` |
 | `koorCluster.spec.useAllDevices` | If all empty + unused devices of the cluster should be used. | `true` |
@@ -109,6 +109,10 @@ koorCluster:
       schedule: 0 0 * * * # The schedule to check for new versions, defaults to everyday at midnight
 ```
 
+!!! tip
+    You can force an immediate version check by changing the `schedule` to `* * * * *` (check every minute) 
+    and changing it back to another more practical schedule when the check is complete.
+
 The current and latest versions will appear in the status of the `KoorCluster` resource:
 
 ```console
@@ -139,3 +143,16 @@ Status:
       Version:              1.12.0
 ...
 ```
+
+## Version Service
+The information about the newest available versions is tracked in the [version service](https://github.com/koor-tech/version-service). Clusters using the Koor Operator default to using the official Koor version service which is available on https://versions.koor.tech . 
+
+Alternatively, you can deploy the version service on your own cluster:
+
+```bash
+kubectl run version-service --image=koorinc/version-service --env="NO_TLS=true" --port 80 --expose
+```
+
+!!! tip
+    The Version Service is never checked if notifications are disabled in the `upgradeOptions.mode` option. 
+    If notifications are enabled, but the Version Service URL can not be reached, nothing will happen
