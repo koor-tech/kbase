@@ -8,6 +8,7 @@ This helps you install a full-fledged Koor Storage Distro (with all Rook-Ceph ar
 
 ## Features
 These are the features currently available in the Koor Operator:
+
 * Install KSD with sane defaults
 * Checks if the cluster meets the minimum recommended resources
 * Get notifications when newer versions of KSD, Ceph or the Koor Operator are available
@@ -48,7 +49,29 @@ rook-ceph-operator-8f76cf848-2j2nv                       1/1     Running     0  
 rook-ceph-tools-7585487b84-6br42                         1/1     Running     0          21m
 ```
 
-The Koor Operator uses sane defaults that help you bootstrap your KSD cluster quickly. It is also configurable via `values.yaml`:
+### Helm Chart Parameters
+
+The Koor Operator uses sane defaults that help you bootstrap your KSD cluster quickly, but you can configure it via the `values.yaml` file:
+
+```yaml
+certmanager:
+  enabled: true
+  installCRDs: true
+koorCluster:
+  spec:
+    useAllDevices: true
+    monitoringEnabled: true
+    dashboardEnabled: true
+    toolboxEnabled: true
+    upgradeOptions:
+      mode: notify
+      endpoint: https://versions.koor.tech
+      schedule: 0 0 * * *
+    ksdReleaseName: ksd
+    ksdClusterReleaseName: ksd-cluster
+```
+
+A detailed documentatrion of the parameters in `values.yaml` can be found [in the git repository](https://github.com/koor-tech/koor-operator/blob/main/charts/koor-operator/README.md). Here are some notable parameters:
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
@@ -150,9 +173,9 @@ The information about the newest available versions is tracked in the [version s
 Alternatively, you can deploy the version service on your own cluster:
 
 ```bash
-kubectl run version-service --image=koorinc/version-service --env="NO_TLS=true" --port 80 --expose
+kubectl run version-service --image=koorinc/version-service:v0.1.4 --env="NO_TLS=true" --port 80 --expose
 ```
 
-!!! tip
+!!! note
     The Version Service is never checked if notifications are disabled in the `upgradeOptions.mode` option. 
     If notifications are enabled, but the Version Service URL can not be reached, nothing will happen
