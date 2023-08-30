@@ -45,7 +45,8 @@ vdb
     #### 1. After deploying your Kubernetes cluster, install Koor Storage Distribution using [Koor Operator Helm chart](https://github.com/koor-tech/koor-operator/tree/feature/ksd-202#install-using-helm)
     ```bash
     $ helm repo add koor-release https://charts.koor.tech/release
-    $ helm install --create-namespace koor-ceph koor-release/rook-ceph  # (optional) -f utils/operatorValues.yaml
+    $ helm install --create-namespace --namespace koor-ceph koor-ceph koor-release/rook-ceph  # (optional) -f utils/operatorValues.yaml
+    $ helm install --create-namespace --namespace koor-ceph kook-ceph-cluster koor-release/rook-ceph-cluster # (optional) -f utils/clusterValues.yaml
     ```
     #### 2. You should be able to see a ready-to-use Koor Storage Cluster
     ```bash
