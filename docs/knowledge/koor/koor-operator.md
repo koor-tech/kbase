@@ -9,6 +9,7 @@ This helps you install a full-fledged Koor Storage Distro (with all Rook-Ceph ar
 ## Features
 These are the features currently available in the Koor Operator:
 * Install KSD with sane defaults
+* Checks if the cluster meets the minimum recommended resources
 * Get notifications when newer versions of KSD, Ceph or the Koor Operator are available
 * More features are planned soon!
 
@@ -65,7 +66,7 @@ The Koor Operator uses sane defaults that help you bootstrap your KSD cluster qu
 
 ## What if I have an existing KSD cluster?
 If you installed KSD using helm and would like to reap the benefits of the Koor Operator, you can add it to your existing cluster by adjusting the `values.yaml` with the helm release names. 
-Note that you need to install the Koor Operator in the same namespace as the other KSD components. For example:
+Note that the Koor Operator needs to be installed in the same namespace as the other KSD components. For example:
 
 ```yaml
 koorCluster:
@@ -74,3 +75,67 @@ koorCluster:
     ksdClusterReleaseName: my-ksd-cluster-release-name
 ```
 
+## Minimum Recommended Resources
+After the Koor Operator is installed, it calculates the total resources available in the cluster and checks if they meet the [minimum recommended resources](https://github.com/koor-tech/koor-operator/blob/842be01935b984cba0227ad630b7c2ccf2558c2f/api/v1alpha1/koorcluster_types.go#L133-L138) to run KSD. The resources are:
+
+* Nodes: the cluster should contain at least **4** nodes.
+* Storage: the total storage available in the cluster should at least than **500GB**
+* CPU: across all nodes, the number of CPU cores should be at least **19 cores**
+* Memory: across all nodes, the available memory should be more than **44GB**
+
+To check if your cluster meets the minimum resources, you can check the status of the `KoorCluster` resource:
+
+```console
+$ kubectl describe -n koor-operator koorclusters
+...
+Status:
+  Meets Minimum Resources:  false
+  Total Resources:
+    Cpu:          6
+    Memory:       6052260Ki
+    Nodes Count:  3
+    Storage:      109293708Ki
+```
+
+## Version Notifications
+The Koor Operator allows you to be notified whenever a new version of KSD, Ceph or the Koor Operator are available. This is controlled in `values.yaml` using the following options:
+
+```yaml
+koorCluster:
+  spec:
+    upgradeOptions:
+      mode: notify # Change to diabled to turn off new version notifications
+      endpoint: https://versions.koor.tech # The endpoint for the version service
+      schedule: 0 0 * * * # The schedule to check for new versions, defaults to everyday at midnight
+```
+
+The current and latest versions will appear in the status of the `KoorCluster` resource:
+
+```console
+$ kubectl describe -n koor-operator koorclusters
+...
+Status:
+  Current Versions:
+    Ceph:           v17.2.6
+    Koor Operator:  0.3.5
+    Ksd:            v1.12.0
+    Kube:           v1.25.3
+  Latest Versions:
+    Ceph:
+      Image Hash:  9c067c50038de818e10ab7887929b6bd496d5dcfe55fa1343854a54e61a82fab
+      Image Uri:   quay.io/ceph/ceph:v17.2.6
+      Version:     17.2.6
+    Koor Operator:
+      Helm Chart:       koor-operator
+      Helm Repository:  https://koor-tech.github.io/koor-operator
+      Image Hash:       95b71899fcc90f8a34161d3f47a3ee3bde4fd11b6a4947c4482e3812ea89a019
+      Image Uri:        koorinc/koor-operator:v0.3.5
+      Version:          0.3.5
+    Ksd:
+      Helm Chart:           rook-ceph
+      Helm Repository:      https://charts.koor.tech/release
+      Image Hash:           d3d38ae93d268290bbf99545b90addaa6f51c3d1f383ef5f2ab6cb65f2cf243e
+      Image Uri:            koorinc/ceph:v1.12.0
+      Version:              1.12.0
+...
+```
