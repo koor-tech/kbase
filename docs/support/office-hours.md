@@ -1,32 +1,21 @@
 # Koor Office Hours
 
-## Join Us
+## On Demand
 
-Koor offers free office hours every other Wednesday at 10 AM Pacific.
+The Koor team is available to answer any questions you have about Rook, Ceph, and everything we have to offer - the Koor Data Control Center, Koor Storage Distribution, Koor Operator, etc. We would also love to learn more about you and your data storage situation.
 
-The Koor team is available to answer any questions you have about Rook, Ceph, and the Koor Storage Distribution. We would also love to learn more about you and your data storage situation.
-
-Plus, we record our sessions for the benefit of all. You could be famous. But only if you want to...
-
-This is the Google Meet information:
-
-- **Koor Office Hours**
-- Wednesday, June 7 · 10:00 – 10:40
-- Time zone: America/Los_Angeles
-- Google Meet joining info
-    - [Video call link](https://meet.google.com/ido-bbdm-pqc)
-    - Or dial: (US) +1 617-675-4444 PIN: 552 816 589 2585#
-    - [More phone numbers](https://tel.meet/ido-bbdm-pqc?pin=5528165892585)
-
-## Meeting dates in 2023
-
-June 7, June 21, July 5, July 19, August 2, August 16, August 30, September 13, September 27, October 11, October 25, November 8, November 22, December 6, December 20
+The Koor team has open office hours based on customer demand. We are happy to meet with anyone&mdash;customer or not&mdash;to discuss data storage. Use our [contact form](https://try.koor.tech/contact/) to leave us a note, and we will arrange a time to talk.
 
 ## Recordings
 
-You can watch recording of previous Koor Office Hours on the [Koor YouTube channel](https://www.youtube.com/@koor-tech).
+We like to record our sessions and share them with the world. Watch them all from [the playlist](https://www.youtube.com/playlist?list=PLns6hdNQZpizxgX7cQzzEiC2bq3TLd-aY).
 
-* On May 10, we showed our progress toward getting the Koor Operator running on Rancher. Good stuff. [Watch](https://www.youtube.com/watch?v=yXvcZm2Qo9g)
-* On April 26, the team recapped the Cephalocon and Kubecon conferences. Amsterdam and stroopwafles. Fun and yum. [Watch](https://www.youtube.com/watch?v=dDF8IgaVJpg)
+### Latest Episodes
+
+- [19 July 2023](https://youtu.be/kcpmWBCRZQ8) - We talk about building our demo system to show Koor software working in a production-style environment
+- [21 June 2023](https://youtu.be/aEtE-lwc9Yk) - Discussion of use cases for Koor, Rook and Ceph
+- [7 June 2023](https://youtu.be/UaL-LkU6enA) - How to get started with Rook and Ceph
+- [10 May 2023](https://www.youtube.com/watch?v=yXvcZm2Qo9g) - We showed our progress toward getting the Koor Operator running on Rancher. Good stuff.
+- [26 April 2023](https://www.youtube.com/watch?v=dDF8IgaVJpg) - The team recapped the Cephalocon and Kubecon conferences in Amsterdam. Plus, stroopwafles. Fun and yum.
 
 And lots more to watch. Go check it out.

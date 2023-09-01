@@ -1,26 +1,10 @@
-
 # Help Desk
 
 ## Send us your questions and feedback
 
-<form name="Contact Us" class="koor-form" action="https://about.koor.tech/contact/" method="POST">
-    <div class="koor-field">
-        <label for="name">Name:</label>
-        <input type="text" name="name" class="form-control" placeholder="Your name"> 
-    </div>
-    <div class="koor-field">
-        <label for="email">Email:</label>
-        <input type="email" name="email" class="form-control" placeholder="Your email address">
-    </div>
-    <div class="koor-field">
-        <label for="message">Message:</label>
-        <textarea name="message" class="form-control" rows="4" placeholder="Your question or feedback"></textarea>
-    </div>
-    <div class="koor-field">
-        <label for="submit"></label>
-        <button type="submit" name="submit">Submit to Koor Help Desk</button>
-    </div>
-</form>
+We are happy to answer any questions you have about data storage and your particular situation. You can use our [contact form](https://try.koor.tech/contact/) to send us a note. We will respond to the email address you give us. We will never share your information with others, although we may add a generic question and answer to this knowledge center in order to share the general advice.
+
+Also, we will take your product suggestions into consideration.
 
 ## Open to any question about data storage
 
@@ -32,7 +16,7 @@ Koor is a remote company; we have people in many time zones around the world. An
 
 ### For free trial users as well as paying customers
 
-The Help Desk is for anyone who needs help, especially if you are using the KSD free trial or Pro subscription. 
+The Help Desk is for anyone who needs help, especially if you are using the KSD free trial or Pro subscription.
 
 We prioritize questions from those who purchased KSD Pro. KSD Pro includes a system assessment, so we can take a closer look and get more specific about solutions to whatever trouble you are having.
 
@@ -44,7 +28,7 @@ The Koor Help Desk is a great way to give us feedback, too. Use the same form to
 
 ### Office hours
 
-If you would like to talk to us live, you can attend one of our [office hours](office-hours).
+If you are interested in a live discussion, we host [office hours](/support/office-hours/) on demand. Use the same form to request a special session of office hours. We will schedule the session, and do a recording to share with the world. Want to be famous?
 
 ### Consulting
 
