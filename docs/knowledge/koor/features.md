@@ -36,7 +36,7 @@ spec:
 
 The operator takes care of configuring the Ceph dashboard and you should be redirected to your SSO provider for login.
 
-![Ceph Dashboard Overview](ceph-mgr-dashboard-sso-overview.jpg)
+![Ceph Dashboard Overview](features/ceph-mgr-dashboard-sso-overview.jpg)
 
 ## General Updates and Features for Community
 
@@ -44,4 +44,4 @@ The operator takes care of configuring the Ceph dashboard and you should be redi
 
 We have worked together with the community to update the Ceph dashboards to make it easier for everyone to keep an eye on their Ceph clusters.
 
-![Updated Grafana Ceph Cluster Dashboard](grafana_new_dashboard.png)
+![Updated Grafana Ceph Cluster Dashboard](features/grafana_new_dashboard.png)

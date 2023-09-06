@@ -45,11 +45,11 @@ Each of the fields needs to be set as follows:
 * `idpAttributes.username` - The SAML2 attribute name containing the user's username (optional, defaults to `uid`).
 * `users` - List of users to create and which system roles to give them. You can also specify your custom roles, but you need to have made them already.
     * You can find a list of dashboard system roles [here](https://docs.ceph.com/en/quincy/mgr/dashboard/#user-roles-and-permissions).
+    * `username` - Name of the user to be created.
+    * `roles` - A list of roles to assign to that user.
 
 After adding this to your `CephCluster` object, wait a minute or two for the operator to complete a reconciliation loop.
 Now you should be auto-redirected to your IdP when accessing the Ceph dashboard.
-
-The full SSO spec can be found [here](../../CRDs/Cluster/ceph-cluster-crd.md#cluster-settings) under the `dashboard:` field.
 
 ## SSO Provider Details
 

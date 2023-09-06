@@ -15,7 +15,7 @@ These are the features currently available in the Koor Operator:
 * More features are planned soon!
 
 ## Installing using Helm
-To get started, you can install the Koor Operator using [helm](helm.sh), using the following command:
+To get started, you can install the Koor Operator using [helm](https://helm.sh), using the following command:
 
 ```bash
 helm repo add koor-operator https://koor-tech.github.io/koor-operator
