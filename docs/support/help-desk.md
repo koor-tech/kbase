@@ -2,7 +2,7 @@
 
 ## Send us your questions and feedback
 
-We are happy to answer any questions you have about data storage and your particular situation. You can use our [contact form](https://try.koor.tech/contact/) to send us a note. We will respond to the email address you give us. We will never share your information with others, although we may add a generic question and answer to this knowledge center in order to share the general advice.
+We are happy to answer any questions you have about data storage and your particular situation. You can use our [contact form](https://try.koor.tech/contact/) to send us a note. We will respond to the email address you give us. We will never share your information with others, although we may add a generic question and answer to this knowledge base in order to share the general advice.
 
 Also, we will take your product suggestions into consideration.
 
