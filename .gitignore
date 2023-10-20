@@ -36,5 +36,8 @@ jspm_packages/
 
 .DS_Store
 
+# Python
+.venv/
+
 # mkdocs
 site/
