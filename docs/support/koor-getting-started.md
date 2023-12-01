@@ -4,21 +4,15 @@ title: "Getting Started with Koor"
 
 Thank you for trying the Koor Data Control Center.
 
-Koor allows you to attach Ceph storage to Kubenetes clusters.
-Koor makes it easier to deploy and manage storage for use in Kubernetes.
-On bare metal or virtual machines, in your own data center or one of the many cloud providers,
-the Koor Storage Distribution (KSD) has all that tools you need.
-Configure any type of storage solution. Koor supports Block, Filesystem and S3-compatible Object Storage at one place.
+This documentation is under construction. Previously, Koor software was based on a fork of the Rook project. Over the summer of 2023, we decided to build the Koor Data Control Center to work directly with Rook and Ceph. That way, we can layer on helpful goodness without risk of getting in the way of Rook and Ceph, which are already outstanding at what they do.
+
+These instructions need an update...coming soon.
 
 ## Requirements
 
 ## Kubernetes Prerequisites
 
-Though KSD can be installed on any existing Kubernetes cluster. We support
-Koor can be installed on any existing Kubernetes cluster
-
-- Kubernetes v1.21 or higher is supported
-- Architectures supported are `amd64` / `x86_64` and `arm64`.
+Something recent and still supported would be best.
 
 ## Ceph Prerequisites
 
@@ -41,95 +35,8 @@ vda
 vdb
 ```
 
-## Install Koor Storage Distribution Operator and Resources
+## Running Rook
 
-=== "Installing using Helm Chart"
+## Install Koor Data Control Center
 
-    #### 1. After deploying your Kubernetes cluster, install Koor Storage Distribution using [Koor Operator Helm chart](https://github.com/koor-tech/koor-operator/tree/feature/ksd-202#install-using-helm)
-    ```bash
-    $ helm repo add koor-release https://charts.koor.tech/release
-    $ helm install --create-namespace --namespace koor-ceph koor-ceph koor-release/rook-ceph  # (optional) -f utils/operatorValues.yaml
-    $ helm install --create-namespace --namespace koor-ceph kook-ceph-cluster koor-release/rook-ceph-cluster # (optional) -f utils/clusterValues.yaml
-    ```
-    #### 2. You should be able to see a ready-to-use Koor Storage Cluster
-    ```bash
-    $ kubectl get -n koor-ceph pod
-    NAME                                   READY   STATUS    RESTARTS   AGE
-    rook-ceph-mgr-a-c5gff977d-656mt         1/1     Running   0          1m
-    rook-ceph-mgr-a-7f6bf57db6-nlprb        1/1     Running   0          1m
-    rook-ceph-mgr-b-85b77d9f8f-nd724        1/1     Running   0          1m
-    rook-ceph-mgr-c-fc6888db9-mswkq         1/1     Running   0          1m
-    rook-ceph-operator-6f4fdc4448           1/1     Running   0          2m
-    rook-ceph-osd-0-6d8db96856-qw6ld        1/1     Running   0          1m
-    rook-ceph-osd-1-5c76b5466-bncdt         1/1     Running   0          1m
-    rook-ceph-osd-2-7fcf9745c5-t7vwf        1/1     Running   0          1m
-    rook-ceph-tools-566fbd58cc-lfxqn        1/1     Running   0          1m
-    ```
-    #### 3. You can then test basic Ceph Block storage
-    ```bash
-    $ kubectl apply -f https://github.com/rook/rook/blob/master/deploy/examples/csi/rbd/storageclass.yaml
-    $ kubectl create -f - << EOF
-    apiVersion: v1
-    kind: PersistentVolumeClaim
-    metadata:
-      name: rbd-pvc
-    spec:
-      accessMode:
-        - ReadWriteOnce
-      resources:
-        requests:
-          storage: 1Gi
-      storageClassName: rook-ceph-block
-    EOF
-    ```
-
-=== "Installing using CRDS"
-
-    #### 1.- Install Koor Storage Distribution Operator and Resources
-
-    ```bash
-    $ git clone --single-branch --branch v1.11.0 https://github.com/koor-tech/koor.git
-    $ cd koor/deploy/examples
-    $ kubectl create -f crds.yaml -f common.yaml -f operator.yaml
-    $ kubectl create -f cluster.yaml
-    ```
-
-    #### 2. Koor Operator takes care of configuring and deploying all cluster components
-
-    ```bash
-    $ kubectl get -n koor-ceph pod
-    NAME                                   READY   STATUS    RESTARTS   AGE
-    rook-ceph-mgr-a-c5gff977d-656mt         1/1     Running   0          1m
-    rook-ceph-mgr-a-7f6bf57db6-nlprb        1/1     Running   0          1m
-    rook-ceph-mgr-b-85b77d9f8f-nd724        1/1     Running   0          1m
-    rook-ceph-mgr-c-fc6888db9-mswkq         1/1     Running   0          1m
-    rook-ceph-operator-6f4fdc4448           1/1     Running   0          2m
-    rook-ceph-osd-0-6d8db96856-qw6ld        1/1     Running   0          1m
-    rook-ceph-osd-1-5c76b5466-bncdt         1/1     Running   0          1m
-    rook-ceph-osd-2-7fcf9745c5-t7vwf        1/1     Running   0          1m
-    rook-ceph-tools-566fbd58cc-lfxqn        1/1     Running   0          1m
-    ```
-
-    #### 3. Consume storage using Kubernetes Native APIs
-
-    ```bash
-    $ kubectl create -f csi/rbd/storageclass.yaml
-    $ kubectl create -f - << EOF
-    apiVersion: v1
-    kind: PersistentVolumeClaim
-    metadata:
-      name: rbd-pvc
-    spec:
-      accessMode:
-        - ReadWriteOnce
-      resources:
-        requests:
-          storage: 1Gi
-      storageClassName: rook-ceph-block
-    EOF
-    ```
-
-That's it! :party_popper:, now you are using Koor Storage Distribution Operator.
-
-Do you have issues running Koor Operator?, take a look [Koor Operator Troubleshooting](https://kb.koor.tech/knowledge/rook/issues/)
-or [Contact us](https://kb.koor.tech/support/help-desk/).
+That's it! :party_popper:
