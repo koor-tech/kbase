@@ -95,4 +95,4 @@ ceph osd unset nodeep-scrub
 
 ---
 
-Be sure to check out Ceph's documentation on [OSD scrubbing]([OSD Config Refernce - Scrubbin - Ceph Documentation](https://docs.ceph.com/en/latest/rados/configuration/osd-config-ref/#scrubbing)) as it contains all config options and their values.
+Be sure to check out Ceph's documentation on [OSD scrubbing](https://docs.ceph.com/en/latest/rados/configuration/osd-config-ref/#scrubbing) as it contains all config options and their values.
