@@ -16,9 +16,9 @@ Koor is a remote company; we have people in many time zones around the world. An
 
 ### For free trial users as well as paying customers
 
-The Help Desk is for anyone who needs help, especially if you are using the KSD free trial or Pro subscription.
+The Help Desk is for anyone who needs help, especially if you are using the Koor free trial or Pro subscription.
 
-We prioritize questions from those who purchased KSD Pro. KSD Pro includes a system assessment, so we can take a closer look and get more specific about solutions to whatever trouble you are having.
+We prioritize questions from those who purchased Koor Pro Bundle. The Pro Bundle includes 20 hours of dedicated support. If you request a system assessment, we will take a closer look at your storage system, and give you specific suggestions about whatever trouble you are having.
 
 ### Feedback is welcome, too
 
@@ -28,10 +28,10 @@ The Koor Help Desk is a great way to give us feedback, too. Use the same form to
 
 ### Office hours
 
-If you are interested in a live discussion, we host [office hours](/support/office-hours/) on demand. Use the same form to request a special session of office hours. We will schedule the session, and do a recording to share with the world. Want to be famous?
+If you are interested in a live discussion, we host [office hours](office-hours.md) on demand. Use the same form to request a special session of office hours. We will schedule the session, and do a recording to share with the world. Want to be famous?
 
 ### Consulting
 
-Some issues require extensive help to resolve beyond what we can resolving over the Help Desk. For help with significant issues, Koor offers Consulting Hours, which are reserved in 10-hour blocks. Before the consultation, we ask that you subscribe to a KSD Pro license so that we have the best, time-saving diagnostic tools.
+Some issues require extensive help to resolve beyond what we can resolving over the Help Desk. For help with significant issues, subscribe to Koor Pro, and get 20 hours of dedicated support. Enterprise level support is also available. Register for a Pro Bundle, and we will contact you to learn more about your situation and customize our arrangement.
 
 See our [pricing page](https://about.koor.tech/pricing/) if you would like consulting help with your Rook Ceph storage issues.

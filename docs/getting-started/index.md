@@ -1,12 +1,12 @@
 ---
 title: Getting started
 ---
-Welcome to the Getting Started Guide!, we are excited that you have chosen Koor Storage Distribution (KSD) as 
-your Kubernetes storage solution.
 
-We understand that there may be many unfamiliar terms for you, 
-or perhaps you simply want to ensure that KSD is the solution you've been searching for. 
-In this guide, we will walk you through the step-by-step process of using KSD, starting from scratch.
+Welcome to the Getting Started Guide! We are excited that you have chosen the Koor Data Control Center to help manage Rook Ceph storage in Kubernetes.
+
+We understand that there may be many unfamiliar terms for you.
+Perhaps you simply want to ensure that the Data Control Center is the solution you've been searching for.
+In this guide, we will walk you through the step-by-step process of using Koor Data Control Center.
 
 Here's a summary of the guide's index:
 
@@ -20,10 +20,6 @@ Here's a summary of the guide's index:
 
 - **[Installing and Using Rook](introduction-to-rook.md)**: In this section, we will familiarize you with the fundamental terms related to Rook. Understanding these terms will enable you to effectively utilize Rook within your storage infrastructure
 
-- **[KSD Koor Storage Distribution](ksd-koor-storage-distribution.md)**: Koor has tools that improve the Rook-Ceph experience, we developed features based on our customers and the communities pain points, to make storage easier to run and consume than ever.
-
-We hope this guide helps you successfully utilize Koor Storage Distribution. 
-If you have any further questions or need assistance along the way, feel free to reach out to our [support team](/support/). 
+- **[Koor Data Control Center Intro](data-control-center-intro.md)**: This is a guide to help you get started.
 
 Let's start with a quick recap of Kubernetes [Introduction to Kubernetes](kubernetes.md).
-Enjoy your journey with KSD!

@@ -5,4 +5,4 @@ nav:
     - solutions-for-storage.md
     - introduction-to-ceph.md
     - introduction-to-rook.md
-    - ksd-koor-storage-distribution.md
+    - data-control-center-intro.md
