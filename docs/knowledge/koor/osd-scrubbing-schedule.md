@@ -3,9 +3,9 @@ title: "OSD Scrubbing Schedule"
 ---
 
 !!! hint
-    This is a paid Koor Storage Distribution feature.
+This feature is being built into the Koor Data Control Center
 
-The Koor Storage Distribution has added a feature to it's customized Rook version that allows for simple configuration of the Ceph OSD Scrubbing schedule.
+The Koor Data Control Center give you a way to configure the Ceph OSD Scrubbing schedule. It's going to be awesome.
 
 This is an example of the OSD scrubbing config in your CephCluster object:
 
@@ -41,16 +41,16 @@ spec:
 
 These options can be used to set a custom OSD scrubbing schedule easily instead of having to use the Ceph config override:
 
-* `applySchedule`: Whether the scrubbing schedule specified should be applied to the cluster.
-* `maxScrubOps`: Max scrubbing operations happening at the same time. Default: `3`.
-* `beginHour`: Begin hour of scrubbing schedule. Default `0`. Setting both `BeginHour` and `EndHour` to `0`, will allow scrubbing the entire day.
-* `endHour`: End hour of scrubbing schedule. Default `0`.
-* `beginWeekDay`: Begin week day of scrubbing schedule. `0` = Sunday, `1` = Monday, etc. Default: `0`.
-* `endWeekDay`: End week day of scrubbing schedule. `0` = Sunday, `1` = Monday, etc. Default: `0`.
-* `minScrubInterval`: Minimum interval to wait before scrubbing again. Default: `24h` (1 day).
-* `maxScrubInterval`: Maximum interval to wait before scrubbing is forced. Default: `168h` (7 days).
-* `deepScrubInterval`: Interval at which to do deeb scrubbing instead of a "light" scrubbing. Default: `168h` (7 days).
-* `scrubSleepSeconds`: Set the scrub sleep as a duration. Default: `0ms`, if you are impacted by scrubbing causing performance issues, it is recommended to set it to at least `100ms`.
+- `applySchedule`: Whether the scrubbing schedule specified should be applied to the cluster.
+- `maxScrubOps`: Max scrubbing operations happening at the same time. Default: `3`.
+- `beginHour`: Begin hour of scrubbing schedule. Default `0`. Setting both `BeginHour` and `EndHour` to `0`, will allow scrubbing the entire day.
+- `endHour`: End hour of scrubbing schedule. Default `0`.
+- `beginWeekDay`: Begin week day of scrubbing schedule. `0` = Sunday, `1` = Monday, etc. Default: `0`.
+- `endWeekDay`: End week day of scrubbing schedule. `0` = Sunday, `1` = Monday, etc. Default: `0`.
+- `minScrubInterval`: Minimum interval to wait before scrubbing again. Default: `24h` (1 day).
+- `maxScrubInterval`: Maximum interval to wait before scrubbing is forced. Default: `168h` (7 days).
+- `deepScrubInterval`: Interval at which to do deeb scrubbing instead of a "light" scrubbing. Default: `168h` (7 days).
+- `scrubSleepSeconds`: Set the scrub sleep as a duration. Default: `0ms`, if you are impacted by scrubbing causing performance issues, it is recommended to set it to at least `100ms`.
 
 For more information about Ceph OSD scrubbing checkout [OSD Config Reference - Scrubbing - Ceph Documentation](https://docs.ceph.com/en/latest/rados/configuration/osd-config-ref/#scrubbing).
 

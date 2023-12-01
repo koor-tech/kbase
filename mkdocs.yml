@@ -1,6 +1,6 @@
 site_name: "Koor Knowledge Base"
 docs_dir: docs/
-site_url: 'https://kb.koor.tech'
+site_url: "https://kb.koor.tech"
 repo_url: https://github.com/koor-tech/kbase
 edit_uri: edit/master/Documentation/
 site_author: "Koor Technologies, Inc."
@@ -27,9 +27,9 @@ theme:
   logo: /images/logo.png
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: 'default'
-      primary: 'koor'
-      accent: 'deep orange'
+      scheme: "default"
+      primary: "koor"
+      accent: "deep orange"
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -46,7 +46,7 @@ theme:
     - content.tabs.link
     - instant
     - navigation.expand
-    - navigation.indexes 
+    - navigation.indexes
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -87,7 +87,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       use_pygments: true

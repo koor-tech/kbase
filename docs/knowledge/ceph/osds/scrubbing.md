@@ -10,8 +10,8 @@ title: OSD Scrubbing
 
 There's two scrubbing "modes":
 
-* ("Light") Scrubbing - Verify basic object attributes and size.
-* "Deep" Scrubbing - Read object data and verify checksums.
+- ("Light") Scrubbing - Verify basic object attributes and size.
+- "Deep" Scrubbing - Read object data and verify checksums.
 
 Especially deep scrubbing can cause performance degredation when it is active at the "wrong time" (e.g., your applications peak hours).
 
@@ -30,7 +30,7 @@ After you have made sure you understand what has probably happen to (data) objec
 
 ## Config Options
 
-[OSD Config Refernce - Scrubbin - Ceph Documentation](https://docs.ceph.com/en/latest/rados/configuration/osd-config-ref/#scrubbing)
+[OSD Config Reference - Scrubbing - Ceph Documentation](https://docs.ceph.com/en/latest/rados/configuration/osd-config-ref/#scrubbing)
 
 ### osd_max_scrubs
 
@@ -40,7 +40,7 @@ The default value is `3`, you can try reducing it to `2` or even to `1`, in case
 
 > The maximum interval in seconds for scrubbing the Ceph OSD Daemon irrespective of cluster load.
 
-If this threshold is crossed, scrubbing can and will happen no matter the current cluster load, unless disabled using 
+If this threshold is crossed, scrubbing can and will happen no matter the current cluster load, unless disabled using
 
 ## Examples
 
@@ -59,7 +59,7 @@ osd_deep_scrub_interval = 1209600
 ```
 
 !!! note
-    Please keep in mind that scrubbing might continue after the schedule when [the `osd_scrub_max_interval` is reached](#osd_scrub_max_interval).
+Please keep in mind that scrubbing might continue after the schedule when [the `osd_scrub_max_interval` is reached](#osd_scrub_max_interval).
 
 ### Weekday evening/night scrubbing
 
@@ -76,10 +76,10 @@ osd_deep_scrub_interval = 1209600
 ## Deactivate Scrubbing
 
 !!! warning
-    Only ever deactivate scrubbing if really necessary or for short periods of time.
+Only ever deactivate scrubbing if really necessary or for short periods of time.
 
 !!! hint
-    [Man page of `ceph` command](https://docs.ceph.com/en/quincy/man/8/ceph/), check out the `ceph set` subcommand section.
+[Man page of `ceph` command](https://docs.ceph.com/en/quincy/man/8/ceph/), check out the `ceph set` subcommand section.
 
 ```bash
 ceph osd set noscrub
@@ -93,6 +93,6 @@ ceph osd unset noscrub
 ceph osd unset nodeep-scrub
 ```
 
-***
+---
 
 Be sure to check out Ceph's documentation on [OSD scrubbing]([OSD Config Refernce - Scrubbin - Ceph Documentation](https://docs.ceph.com/en/latest/rados/configuration/osd-config-ref/#scrubbing)) as it contains all config options and their values.

@@ -1,23 +1,17 @@
 ---
-title: "KSD Free Trial"
+title: "Koor Free Trial"
 ---
 
 <img src="/images/free-trial.png" align="left" style="margin-right: 2em;" width="25%" />
 
-# Thank you for trying KSD
+# Thank you for trying Koor Data Control Center
 
-Thanks for giving the Koor Storage Distribution a try. We hope you love it as much as we do.
+We hope you love it as much as we do.
 
-If this is your first time using KSD, follow the instructions on the [Getting Started](/support/ksd-getting-started) page. Set things up, and give it a try.
+Install the Data Control Center into your Kubernetes environment, and give it a test drive on a cluster with up to 4 Rook Ceph storage nodes. For detailed instructions, follow our [Getting Started](koor-getting-started.md) guide.
 
-
-# How to get help
-
-We are here to help make your experience positive. If you get stuck, use our Help Desk to tell us what is happening. Please share your email address (on the form) so that we can reply.
-
-[Help Desk](/support/help-desk)
-
+If you run into trouble, do not hesitate to [contact us](https://about.koor.tech/contact) for help.
 
 # Need to register?
 
-You can [register your KSD free trial](https://about.koor.tech/pricing/freetrial/) at any time. Do it early so that we can give you full support during your trial.
+You can [register your Data Control Center free trial](https://about.koor.tech/register) at any time. Your registration we will help us keep you up to date on the latest from Koor.

@@ -8,7 +8,7 @@ Each time a container is stopped or restarted, it starts with a clean state, eli
 
 ## Persistent Storage for Data:
 
-Many applications, such as databases, content management systems, and file servers, rely on persistent storage to maintain important data. 
+Many applications, such as databases, content management systems, and file servers, rely on persistent storage to maintain important data.
 Persistent storage ensures that data remains intact and accessible even when containers are restarted, rescheduled, or scaled.
 
 Persistent storage allows applications to:
@@ -20,34 +20,37 @@ Persistent storage allows applications to:
 
 Without persistent storage, applications would lose important data and face challenges in maintaining consistency and reliability.
 
-Kubernetes offers the concepts of PersistentVolumeClaim (PVC) and PersistentVolume (PV) to fulfill this requirement. 
-Whether you're running Kubernetes on bare metal or in the cloud, you can leverage various storage options for PVs. 
-For example, on bare metal, you can utilize local storage devices such as hard drives or solid-state drives (SSDs) directly as PVs. 
+Kubernetes offers the concepts of PersistentVolumeClaim (PVC) and PersistentVolume (PV) to fulfill this requirement.
+Whether you're running Kubernetes on bare metal or in the cloud, you can leverage various storage options for PVs.
+For example, on bare metal, you can utilize local storage devices such as hard drives or solid-state drives (SSDs) directly as PVs.
 This enables your Kubernetes applications to have access to durable and scalable storage directly on the underlying hardware without relying on a cloud-specific storage service like AWS Elastic Block Store (EBS).
 
 ### Using PVC and PV on Kubernetes
 
 - Create a PersistentVolume: Define a PersistentVolume (PV) manifest `pv.yaml` that describes the storage volume you want to make available to your applications. Here's an example PV manifest using a local storage volume:
+
 ```yaml
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: my-pv
 spec:
-    capacity:
-      storage: 10Gi
-    accessModes:
-      - ReadWriteOnce
-    hostPath:
-      path: /path/to/storage
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /path/to/storage
 ```
 
 - Create PV resource
+
 ```console
 $ kubectl apply -f pv.yaml
 ```
 
 - Create a PersistentVolumeClaim: Define a PersistentVolumeClaim (PVC) manifest `pvc.yaml` that requests storage resources from the available PVs. Here's an example PVC manifest:
+
 ```yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -60,11 +63,15 @@ spec:
     requests:
       storage: 5Gi
 ```
+
 - Create PVC resource
+
 ```console
 $ kubectl apply -f pvc.yaml
 ```
+
 - And finally use this on your pods
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -89,11 +96,9 @@ Managing storage in containerized environments introduces complexities due to th
 platforms like Kubernetes.
 
 - Data Persistence: Ensuring that data remains persistent and accessible across container restarts, scaling events, and node failures.
-- Storage Provisioning:  Provisioning of storage resources to containers and pods, considering capacity, performance, and availability.
+- Storage Provisioning: Provisioning of storage resources to containers and pods, considering capacity, performance, and availability.
 - Data Replication and Synchronization: Implementing mechanisms to replicate and synchronize data across multiple instances or nodes for high availability and fault tolerance.
 - Dynamic Volume Provisioning: Dynamically provisioning and attaching storage volumes to containers as per demand, without manual intervention.
 - Data Backup and Recovery: Implementing backup and recovery strategies to protect critical data and enable disaster recovery when needed.
 
-Those solutions could be a bit hard to implement or manage overall when you are dealing with a lot of data I mean Terabytes of data, 
-fortunately we have a lof ot options to deal with it, let's see them on detail in the next section [Storage Solutions](solutions-for-storage.md), fo course you can skip them and go to
-[KSD Koor Storage Distribution](ksd-koor-storage-distribution.md) directly to know the benefits over other options.
+Those solutions could be a bit hard to implement or manage overall when you are dealing with a lot of data I mean Terabytes of data, fortunately we have a lots of options to deal with it. Let's see them on detail in the next section [Storage Solutions](solutions-for-storage.md).
