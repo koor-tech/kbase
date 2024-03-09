@@ -1,0 +1,7 @@
+arrange:
+    - index.md
+    - guides
+    - use-cases
+    - ceph
+    - rook
+    - koor

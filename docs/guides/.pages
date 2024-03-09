@@ -1,8 +1,8 @@
 nav:
     - index.md
+    - solutions-for-storage.md
     - kubernetes.md
     - containers-and-persistent-storage.md
-    - solutions-for-storage.md
     - introduction-to-ceph.md
     - introduction-to-rook.md
-    - data-control-center-intro.md
+    - 'Getting Started with Data Control Center': getting-started-data-control-center.md

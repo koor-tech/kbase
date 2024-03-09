@@ -4,14 +4,14 @@ site_url: "https://kb.koor.tech"
 repo_url: https://github.com/koor-tech/kbase
 edit_uri: edit/master/Documentation/
 site_author: "Koor Technologies, Inc."
-site_description: "Koor Knowledge Base"
+site_description: "Knowledge Base"
 use_directory_urls: true
 copyright: |
-  <a class="logo" href="https://about.koor.tech/">
+  <a class="logo" href="https://koor.tech/">
     <img src="/images/logo.png" alt="Koor Technologies, Inc. logo" style="max-width: 100px" />
   </a>
   <p>
-    &#169; 2023 Koor Technologies, Inc. All Rights Reserved.
+    &#169; 2024 Koor Technologies, Inc. All Rights Reserved.
   </p>
   <p>
     Ceph is a trademark or registered trademark of Red Hat, Inc. or its subsidiaries in the United States and other countries.
@@ -19,6 +19,11 @@ copyright: |
   <p>
     All trademarks are property of their respective owners in the US and other countries.
   </p>
+# nav:
+#   - Home: index.md
+#   - Ceph: ceph/index.md
+#   - Rook: rook/index.md
+#   - Koor: koor/index.md
 theme:
   name: material
   custom_dir: docs/.overrides/
@@ -108,11 +113,11 @@ extra:
       link: https://github.com/koor-tech
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/koor-technologies-inc/
-    - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/koor_tech
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@koor-tech
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/koorinc
     - icon: fontawesome/brands/medium
-      link: https://about.koor.tech/blog/
+      link: https://blog.koor.tech/blog/
