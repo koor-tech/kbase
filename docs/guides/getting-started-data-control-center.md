@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Koor"
+title: "Getting Started with Koor Data Control Center"
 ---
 
 Thank you for trying the Koor Data Control Center.
@@ -18,10 +18,10 @@ Something recent and still supported would be best.
 
 To configure the Ceph storage cluster, at least one of these local storage types is required
 
-- Raw devices (no partitions or formatted filesystems)
-- Raw partitions (no formatted filesystem)
-- LVM Logical Volumes (no formatted filesystem)
-- Persistent Volumes available from a storage class in block mode
+-   Raw devices (no partitions or formatted filesystems)
+-   Raw partitions (no formatted filesystem)
+-   LVM Logical Volumes (no formatted filesystem)
+-   Persistent Volumes available from a storage class in block mode
 
 Confirm whether the partitions or devices are formatted with filesystems with the following command:
 
