@@ -2,8 +2,19 @@
 title: Data Storage Guides
 ---
 
-We want to help you understand you data storage options, especially Ceph and Rook. This set of guides starts with a high-level overview of [storage solutions](solutions-for-storage.md) in the market. Then you can learn about [Kubernetes](kubernetes.md), [containers and persistent storage](containers-and-persistent-storage.md).
+## Getting Started Guides
 
-You can also get an introduction to [Ceph](introduction-to-ceph.md) and [Rook](introduction-to-rook.md).
+These guides will help you get the most out of Koor solutions.
 
-Finally, if you happen to be using the Data Control Center, you might find the [getting started guide](getting-started-data-control-center.md) to be useful.
+-   [Starter Cluster](getting-started-starter-cluster.md)
+-   [Data Control Center](getting-started-data-control-center.md)
+
+## Open Source Software Guides
+
+Learn about data storage options and the open source ecosystem.
+
+-   [Overview of storage solutions](solutions-for-storage.md)
+-   [Kubernetes](kubernetes.md)
+-   [Containers and persistent storage](containers-and-persistent-storage.md)
+-   [Ceph](introduction-to-ceph.md)
+-   [Rook](introduction-to-rook.md)
